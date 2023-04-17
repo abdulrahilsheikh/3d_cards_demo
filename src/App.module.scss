@@ -1,0 +1,26 @@
+.appContainer {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .highlighter {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    display: flex;
+
+    * {
+      flex: 1;
+      height: 100%;
+      width: 100%;
+    }
+
+    &>*:nth-child(odd) {
+      background-color: #cccccc11;
+    }
+  }
+}
